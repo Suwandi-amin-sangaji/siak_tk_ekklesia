@@ -61,10 +61,10 @@
                                 <thead class="bg-light text-capitalize">
                                     <tr>
                                         <th>No</th>
+                                        <th>Foto Siswa</th>
                                         <th>No Induk</th>
                                         <th>Nama Lengkap</th>
                                         <th>Kelompok</th>
-                                        <th>Jenis Kelamin</th>
                                         <th>Status Sekolah</th>
                                         <th>Action</th>
                                     </tr>
@@ -73,16 +73,35 @@
                                     <?php
                                     include 'koneksi.php';
                                     $no = 1;
-                                    $data = mysqli_query($koneksi, "SELECT * from tb_siswa JOIN tb_status ON tb_status.id_status = tb_siswa.id_status");
+                                    $data = mysqli_query($koneksi, "SELECT * from tb_siswa");
                                     while ($d = mysqli_fetch_array($data)) {
                                     ?>
                                     <tr>
                                         <td><?php echo $no++; ?></td>
+                                        <td class="text-center">
+                                            <?php
+                                                if ($d['foto_siswa'] == "") { ?>
+                                            <img src="https://via.placeholder.com/500x500.png?text=PAS+FOTO+SISWA"
+                                                style="width:100px;height:100px;">
+                                            <?php } else { ?>
+                                            <img src="fotosiswa/<?php echo $d['foto_siswa']; ?>"
+                                                style="width:100px;height:100px;">
+                                            <?php } ?>
+                                        </td>
                                         <td><?php echo $d['no_induk']; ?></td>
                                         <td><?php echo $d['nama']; ?></td>
                                         <td><?php echo $d['kelas']; ?></td>
-                                        <td><?php echo $d['jk']; ?></td>
-                                        <td><?php echo $d['nama_status'];  ?></td>
+                                        <td>
+                                            <?php
+                                                if ($d['id_status'] == 1) {
+                                                    echo "AKTIF";
+                                                } elseif ($d['id_status'] == 2) {
+                                                    echo "TIDAK AKTIF";
+                                                } else {
+                                                    echo "LULUS";
+                                                }
+                                                ?>
+                                        </td>
                                         <td>
                                             <a class="btn btn-success"
                                                 href="detail-siswa.php?id=<?php echo $d['id_siswa']; ?>">Detail</a>

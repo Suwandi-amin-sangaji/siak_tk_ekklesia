@@ -26,7 +26,7 @@ if (!$foto) {
 
 
 // menginput data ke database
-mysqli_query($koneksi, "INSERT INTO `tb_pegawai`(`nip`, `nama_guru`, `gr_kelompok`, `ttl`, `jenkel`, `pend_terakhir`, `agama`, `th_ijazah_terakhir`, `alamat`, `status`, `jabatan`, `telp`, `no_sertifikasi`, `foto`) VALUES ('$nip','$nama_guru','$gr_kelompok','$ttl','$jenkel','$pend_terakhir','$agama','$th_ijazah_terakhir','$alamat','$status','$jabatan','$telp','$no_sertifikasi','$foto')");
+mysqli_query($koneksi, "INSERT INTO `tb_guru`(`nip`, `nama_guru`, `gr_kelompok`, `ttl`, `jenkel`, `pend_terakhir`, `agama`, `th_ijazah_terakhir`, `alamat`, `status`, `jabatan`, `telp`, `no_sertifikasi`, `foto`) VALUES ('$nip','$nama_guru','$gr_kelompok','$ttl','$jenkel','$pend_terakhir','$agama','$th_ijazah_terakhir','$alamat','$status','$jabatan','$telp','$no_sertifikasi','$foto')");
 
 
 function upload()

@@ -4,7 +4,7 @@
 
 <div class="contaner">
     <div class="row">
-        <div class="col-sm-12 text-center">
+        <div class="col-sm-12 text-center mt-5">
             <h4>Cari Report Siswa</h4>
         </div>
     </div>
@@ -20,6 +20,7 @@
         </div>
     </div>
 </div>
+
 
 
 <?php include 'include/footer.php'; ?>

@@ -52,7 +52,7 @@
                     <label for="nama" class="col-sm-3 col-form-label">Nama Lengkap :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="nama" name="nama"
-                            value="<?php echo $data['nama'] ?>">
+                            value="<?php echo $data['nama'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -82,7 +82,7 @@
                 <div class="form-group row">
                     <label for="jk" class="col-sm-3 col-form-label">Jenis Kelamin :</label>
                     <div class="col-sm-9">
-                        <select class="form-control" id="jk" name="jk" value="<?php echo $data['jk'] ?>">
+                        <select class="form-control" id="jk" name="jk" value="<?php echo $data['jk'] ?>" readonly>
                             <option>Laki-Laki</option>
                             <option>Perempuan</option>
                         </select>
@@ -104,14 +104,14 @@
                     <label for="nama_ayah" class="col-sm-3 col-form-label">Nama Ayah :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="nama_ayah" name="nama_ayah"
-                            value="<?php echo $data['nama_ayah'] ?>">
+                            value="<?php echo $data['nama_ayah'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nama_ibu" class="col-sm-3 col-form-label">Nama Ibu :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="nama_ibu" name="nama_ibu"
-                            value="<?php echo $data['nama_ibu'] ?>">
+                            value="<?php echo $data['nama_ibu'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -125,21 +125,21 @@
                     <label for="anak_ke" class="col-sm-3 col-form-label">Anak Ke :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="anak_ke" name="anak_ke"
-                            value="<?php echo $data['anak_ke'] ?>">
+                            value="<?php echo $data['anak_ke'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="jml_saudara" class="col-sm-3 col-form-label">Jumlah Saudara Kandung :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="jml_saudara" name="jml_saudara"
-                            value="<?php echo $data['jml_saudara'] ?>">
+                            value="<?php echo $data['jml_saudara'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="status_anak" class="col-sm-3 col-form-label">Hubungan Keluarga :</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control" id="status_anak" name="status_anak"
-                            value="<?php echo $data['status_anak'] ?>">
+                            value="<?php echo $data['status_anak'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -153,7 +153,7 @@
                     <label for="kode_pos" class="col-sm-3 col-form-label">Kode Pos :</label>
                     <div class="col-sm-9">
                         <input class="form-control" id="kode_pos" name="kode_pos"
-                            value="<?php echo $data['kode_pos'] ?>"></input>
+                            value="<?php echo $data['kode_pos'] ?>" readonly></input>
                     </div>
                 </div>
 

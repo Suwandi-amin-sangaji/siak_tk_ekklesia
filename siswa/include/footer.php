@@ -1,5 +1,4 @@
 </div>
-</div>
 <footer>
     <div class="footer-area">
         <p>© Copyright <?php echo date('Y') ?>.<a href="https://colorlib.com/wp/">TK EKKLESIA</a>.</p>
@@ -38,13 +37,13 @@
 </html>
 
 <?php
-// if (isset($_SESSION['status'])) { 
+if (isset($_SESSION['status'])) {
 ?>
-// <?php
-    // } else {
-    //     echo "<script>
-    //                 alert('Silahkan login terlebih dahulu !')
-    //                 window.location='../login/login.php';  
-    //                 </script>";
-    // }
-    ?>
+<?php
+} else {
+    echo "<script>
+                    alert('Silahkan login terlebih dahulu !')
+                    window.location='../login/login.php';  
+                    </script>";
+}
+?>

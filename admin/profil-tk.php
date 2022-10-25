@@ -21,7 +21,7 @@
                             ?>
                             <div class="row">
                                 <div class="col-sm-4 text-center">
-                                    <img src="profiletk/6008e6c90f273.jpg" class="rounded mb-3 img-thumbnail">
+                                    <img src="profiltk/download.png" class="rounded mb-3 img-thumbnail">
                                 </div>
                                 <div class="col-sm-8">
                                     <div class="list-group">

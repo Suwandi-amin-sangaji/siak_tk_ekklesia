@@ -9,7 +9,7 @@
             <?php
             include "koneksi.php";
             $nip = $_GET['nip'];
-            $query_mysql = mysqli_query($koneksi, "select * from tb_pegawai where nip = '$nip'");
+            $query_mysql = mysqli_query($koneksi, "select * from tb_guru where nip = '$nip'");
             $nomor = 1;
             while ($data = mysqli_fetch_array($query_mysql)) {
             ?>

@@ -27,7 +27,7 @@ if ($_FILES['foto']['error'] === 4) {
 }
 
 // update data ke database
-mysqli_query($koneksi, "UPDATE tb_pegawai set nip= '$nip', nama_guru= '$nama_guru', gr_kelompok= '$gr_kelompok', ttl= '$ttl', jenkel= '$jenkel', pend_terakhir= '$pend_terakhir', agama= '$agama', th_ijazah_terakhir= '$th_ijazah_terakhir', alamat= '$alamat', status= '$status', jabatan= '$jabatan', telp= '$telp', no_sertifikasi= '$no_sertifikasi', foto='$foto' where nip='$nip'");
+mysqli_query($koneksi, "UPDATE tb_guru set nip= '$nip', nama_guru= '$nama_guru', gr_kelompok= '$gr_kelompok', ttl= '$ttl', jenkel= '$jenkel', pend_terakhir= '$pend_terakhir', agama= '$agama', th_ijazah_terakhir= '$th_ijazah_terakhir', alamat= '$alamat', status= '$status', jabatan= '$jabatan', telp= '$telp', no_sertifikasi= '$no_sertifikasi', foto='$foto' where nip='$nip'");
 
 function upload()
 {

@@ -101,8 +101,8 @@
                             include "koneksi.php";
                             $data = mysqli_query($koneksi, 'SELECT * FROM tb_rincianbayar');
                             while ($row = mysqli_fetch_assoc($data)) { ?>
-                            <h1>Rincian Biaya Anak</h1>
-                            <h2>Tahun Ajaran <?php echo date('Y') ?></h2>
+                            <h5>Rincian Biaya Anak</h5>
+                            <h6>Tahun Ajaran <?php echo date('Y') ?></h6>
                             <ol>
                                 <li>Baju Seragam = Rp. <?php echo $row['biaya_seragam']; ?></li>
                                 <li>Sampul Raport = Rp. <?php echo $row['raport']; ?></li>

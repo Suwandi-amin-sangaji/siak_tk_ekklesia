@@ -4,11 +4,6 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 text-center">
-            <h3>Laporan Pembelajaran Siswa/Siswi TK Pelita Harapan</h3>
-        </div>
-    </div>
-    <div class="row">
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

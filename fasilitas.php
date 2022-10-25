@@ -12,7 +12,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Kegiatan</title>
+    <title>Galery</title>
 
 
 
@@ -45,20 +45,17 @@
         <?php include "inc/navbar.php"; ?>
     </div>
     <!-- end header section -->
-
-
-    <!-- teacher section -->
     <div class="container">
-        <h2 class="main-heading ">
-            foto Kegiatan
-        </h2>
-        <p class="text-center">
-            TK EKKLESIA
-        </p>
         <div class="row">
+            <h2 class="main-heading ">
+                foto Fasilitas
+            </h2>
+            <p class="text-center">
+                TK EKKLESIA
+            </p>
             <?php
             include "koneksi.php";
-            $query = "SELECT * FROM tb_kegiatan";
+            $query = "SELECT * FROM tb_fasilitas";
             $get_data = mysqli_query($koneksi, $query);
 
             while ($row = mysqli_fetch_assoc($get_data)) { ?>
@@ -67,7 +64,7 @@
                     <div class="card">
 
                         <div class="card-body">
-                            <img class="card-img-top" src="admin/fotokegiatan/<?php echo $row['foto']; ?> " width="50px" alt="Card image cap">
+                            <img class="card-img-top" src="admin/fotofasilitas/<?php echo $row['foto']; ?> " width="50px" alt="Card image cap">
                             <p class="mt-3"><?php echo $row['deskripsi'] ?></p>
                         </div>
 
@@ -76,5 +73,6 @@
             <?php } ?>
         </div>
     </div>
+
 
     <?php include "inc/footer.php" ?>

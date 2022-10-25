@@ -40,7 +40,7 @@
         <tbody>
             <?php
             include 'koneksi.php';
-            $data = mysqli_query($koneksi, "SELECT * FROM tb_pegawai ORDER BY nip ASC");
+            $data = mysqli_query($koneksi, "SELECT * FROM tb_guru ORDER BY nip ASC");
             $nomor = 1;
             while ($d = mysqli_fetch_array($data)) {
             ?>

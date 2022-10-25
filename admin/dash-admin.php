@@ -11,8 +11,15 @@
                         <div class="card">
                             <div class="seo-fact sbg1">
                                 <div class="p-4 d-flex justify-content-between align-items-center">
-                                    <div class="seofct-icon"><i class="ti-user"></i> Jumlah Siswa</div>
-                                    <h2>2,315</h2>
+                                    <?php
+                                    // mengambil data siswa
+                                    $data_siswa = mysqli_query($koneksi, "SELECT * FROM tb_siswa");
+
+                                    // menghitung data siswa
+                                    $total_siswa = mysqli_num_rows($data_siswa);
+                                    ?>
+                                    <div class="seofct-icon"><i class="ti-user"></i> Total Siswa</div>
+                                    <h2><?php echo $total_siswa; ?></h2>
                                 </div>
                                 <canvas id="seolinechart1" height="50"></canvas>
                             </div>
@@ -22,8 +29,15 @@
                         <div class="card">
                             <div class="seo-fact sbg2">
                                 <div class="p-4 d-flex justify-content-between align-items-center">
-                                    <div class="seofct-icon"><i class="ti-user"></i> Jumlah Guru</div>
-                                    <h2>3,984</h2>
+                                    <?php
+                                    // mengambil data guru
+                                    $data_guru = mysqli_query($koneksi, "SELECT * FROM tb_guru");
+
+                                    // menghitung data guru
+                                    $total_guru = mysqli_num_rows($data_guru);
+                                    ?>
+                                    <div class="seofct-icon"><i class="ti-user"></i> Total Guru</div>
+                                    <h2><?php echo $total_guru ?></h2>
                                 </div>
                                 <canvas id="seolinechart2" height="50"></canvas>
                             </div>
@@ -33,7 +47,7 @@
                         <div class="card">
                             <div class="seo-fact sbg1">
                                 <div class="p-4 d-flex justify-content-between align-items-center">
-                                    <div class="seofct-icon"><i class="ti-thumb-up"></i> Jumlah Mapel</div>
+                                    <div class="seofct-icon"><i class="ti-user"></i>Siswa Aktif</div>
                                     <h2>2,315</h2>
                                 </div>
                                 <canvas id="seolinechart1" height="50"></canvas>
@@ -44,7 +58,7 @@
                         <div class="card">
                             <div class="seo-fact sbg2">
                                 <div class="p-4 d-flex justify-content-between align-items-center">
-                                    <div class="seofct-icon"><i class="ti-share"></i> Jumlah Kelas</div>
+                                    <div class="seofct-icon"><i class="ti-user"></i>Siswa Lulus</div>
                                     <h2>3,984</h2>
                                 </div>
                                 <canvas id="seolinechart2" height="50"></canvas>

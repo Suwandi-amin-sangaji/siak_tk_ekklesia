@@ -83,7 +83,7 @@
                                             <td><?php echo $d['deskripsi']; ?></td>
                                             <td>
                                                 <a class="btn btn-info" href="edit-fasilitas.php?id=<?php echo $d['id']; ?>">Edit</a>
-                                                <a onclick="return confirm('Yakin Hapus?')" class="btn btn-danger" href="hapus-fasilitas.php?id=<?php echo $d['id']; ?>">Hapus</a>
+                                                <a onclick="return confirm('Yakin ingin mengHapus?')" class="btn btn-danger" href="hapus-fasilitas.php?id=<?php echo $d['id']; ?>">Hapus</a>
                                             </td>
                                         </tr>
                                     <?php

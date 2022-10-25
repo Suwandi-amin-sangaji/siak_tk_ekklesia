@@ -32,8 +32,14 @@
                             <a class="nav-link" href="guru.php"> Guru </a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="galery.php"> Gallery </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Galery
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="galery.php">Kegiatan</a>
+                                <a class="dropdown-item" href="fasilitas.php">Fasilitas</a>
+                            </div>
                         </li>
 
                         <li class="nav-item dropdown">

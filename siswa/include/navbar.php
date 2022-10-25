@@ -37,7 +37,7 @@ if (isset($_SESSION['status'])) { ?>
                                         ?>
                                     <li><a href='berhasil_daftar.php'>Konfirmasi Pendaftaran</a></li>
                                     <!-- <li><a href="pembayaran.php">Cetak Bukti Pendaftaran</a></li> -->
-                                    <li><a href="#">Cek Status Pendaftaran</a></li>
+                                    <li><a href="status_pendaftaran.php">Cek Status Pendaftaran</a></li>
                                 </ul>
                             </li>
                             <li>
