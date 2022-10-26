@@ -3,8 +3,8 @@
         <div class="row align-items-center">
             <div class="col-md-3">
                 <div class="logo">
-                    <a>
-                        <TK href="index.html" style="font-size: 20px; color:black; font-weight:700 ;">TK EKLESIA
+                    <a href="index.html" style="font-size: 20px; color:black; font-weight:700px;">
+                        TK EKKLESIA
                     </a>
                 </div>
             </div>

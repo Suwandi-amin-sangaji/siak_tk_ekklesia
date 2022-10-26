@@ -19,6 +19,10 @@ if (isset($_SESSION['status'])) { ?>
                         <div class="card-body text-center my-5 text-align">
                             <h3 class="font-weight-bold">Terimakasih telah melakukan pembayaran!. </h3>
                             <h4>Mohon tunggu maksimas 3 x 24 jam <br> untuk mengetahui status pembayaran Anda.</h4>
+                            <h4>Atau Bisa langung Ke Sekolah Untuk Konfirmasi Dan Melengkapi Data Yang di butuhkan</h4>
+                            <br>
+                            <h4>Atau Hubungi Wa 0822563000921</h4>
+
                         </div>
                         <!-- <div class="modal-footer my-2">
                             <a href="dash_siswa.php" class="btn btn-dark">OK</a>

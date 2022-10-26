@@ -7,7 +7,7 @@
             <div class="col-12 mt-5">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="header-title">Data Siswa</h4>
+                        <h4 class="header-title">Data Alumni Tk Ekklesia</h4>
                         <?php if (isset($_GET['pesan'])) {
                         ?>
                         <?php if ($_GET['pesan'] == "berhasil") {
@@ -54,12 +54,10 @@
                         </div>
                         <?php } ?>
                         <?php } ?>
-                        <div class="data-tables text-right">
+                        <div class="data-tables">
                             <button type="button" class="btn btn-primary mb-3 pl-5 pr-5" data-toggle="modal"
                                 data-target=".bd-example-modal-lg"><i class="fa fa-plus "> Tambah</i>
                             </button>
-                            <a href="cetak-siswa.php" target="_blank" class="btn btn-success mb-3 pl-5 pr-5"><i
-                                    class="fa fa-file-excel-o"> Cetak</i></a>
                             <table id="dataTable" class="table-bordered">
                                 <thead class="bg-light text-capitalize">
                                     <tr>

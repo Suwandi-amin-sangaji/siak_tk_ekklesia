@@ -40,12 +40,6 @@
      <!-- end header section -->
      <section class="teacher_section layout_padding-bottom">
          <div class="container">
-             <h2 class="main-heading ">
-                 FORMULIR PENDAFTARAN
-             </h2>
-             <p class="text-center">
-                 Pendaftaran Siswa Baru TK EKKLESIA
-             </p>
 
              <?php
                 //Include file koneksi, untuk koneksikan ke database
@@ -110,14 +104,45 @@
                     }
                 }
                 ?>
+             <div class="card">
+                 <div class="card-header">
+                     INFORMASI PENDUKUNG PENGISIAN FORMULIR PESERTA DIDIK BARU
+                 </div>
+                 <div class="card-body">
+                     <blockquote class="blockquote mb-0">
+                         <p>
+                             1. Kategori usia per bulan juni untuk kelas KB-TK EKKLESIA. <br>
+
+                             2-3 tahun masuk ke Kelompok Bermain/KB Kecil. <br>
+                             3-4 tahun masuk ke Kelompok Bermain/KB Besar.<br>
+                             4-5 tahun masuk ke Taman Kanak-Kanak/TK A.<br>
+                             5-6 tahun masuk ke Taman Kanak-Kanak/TK B.<br>
+                             2. Jika tidak ada penyakit berat yang pernah diderita maka isikan 'TIDAK ADA'. <br>
+                             3. Jika tidak ada alergi yang pernah diderita maka isikan 'TIDAK ADA'.<br>
+                             4. Informasi lebih lanjut bisa ditanyakan ke nomer WA 0822563309200 (bu ibu) atau
+                             081717333436 (Bu ibu) dan bisa langsung datang ke sekolahan sesuai jam kerja 08.00 WIB s.d
+                             12.00 WIB
+                         <p class="text-danger">* Wajib Diisi</p>
+                         </p>
+
+                     </blockquote>
+                 </div>
+             </div>
+             <h2 class="main-heading  mt-5">
+                 FORMULIR PENDAFTARAN
+             </h2>
+             <p class="text-center">
+                 Pendaftaran Siswa Baru TK EKKLESIA
+             </p>
+
              <form id="form" method="post">
                  <div class="alert alert-primary">
-                     <strong>Pendaftaran</strong>
+                     <strong>Pendaftaran </strong>
                  </div>
                  <div class="row">
                      <div class="col-sm-12">
                          <div class="form-group">
-                             <label>Tanggal Pendaftaran:</label>
+                             <label>Tanggal Pendaftaran:<span class="text-danger"> *</span> </label>
                              <input type="date" name="tgl_pendaftaran" class="form-control" placeholder="">
                          </div>
                      </div>
@@ -128,13 +153,13 @@
                  <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Nama Lengkap:</label>
+                             <label>Nama Lengkap:<span class="text-danger">*</span></label>
                              <input type="text" name="nama" class="form-control" placeholder="Masukan Nama Lengkap">
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Nomor Identitas (NIK):</label>
+                             <label>Nomor Identitas (NIK):<span class="text-danger">*</span></label>
                              <input type="text" name="nik" class="form-control" placeholder="Masukan Nomor NIK">
                          </div>
                      </div>
@@ -142,14 +167,14 @@
                  <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Tempat Lahir:</label>
+                             <label>Tempat Lahir:<span class="text-danger">*</span></label>
                              <input type="text" name="tempat_lahir" class="form-control"
                                  placeholder="Masukan Tempat Lahir">
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Tanggal Lahir:</label>
+                             <label>Tanggal Lahir:<span class="text-danger">*</span></label>
                              <input type="date" name="tanggal_lahir" class="form-control">
                          </div>
                      </div>
@@ -159,7 +184,7 @@
                  <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Agama:</label>
+                             <label>Agama:<span class="text-danger">*</span></label>
                              <select class="form-control" name="agama">
                                  <option>Pilih</option>
                                  <option value="Islam">Islam</option>
@@ -173,7 +198,7 @@
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Jenis Kelamin:</label>
+                             <label>Jenis Kelamin:<span class="text-danger">*</span></label>
                              <select class="form-control" name="jk">
                                  <option>Pilih</option>
                                  <option value="1">Laki-laki</option>
@@ -186,20 +211,20 @@
                  <div class="row">
                      <div class="col-sm-4">
                          <div class="form-group">
-                             <label>Anak Ke :</label>
+                             <label>Anak Ke :<span class="text-danger">*</span></label>
                              <input type="text" name="anak_ke" class="form-control" placeholder="Anak Ke">
                          </div>
                      </div>
                      <div class="col-sm-4">
                          <div class="form-group">
-                             <label>Jumlah Saudara Kandung:</label>
+                             <label>Jumlah Saudara Kandung:<span class="text-danger">*</span></label>
                              <input type="text" name="jml_saudara" class="form-control"
                                  placeholder="Masukan Jumlah Saudara">
                          </div>
                      </div>
                      <div class="col-sm-4">
                          <div class="form-group">
-                             <label>Status Anak:</label>
+                             <label>Status Anak:<span class="text-danger">*</span></label>
                              <input type="text" name="status_anak" class="form-control"
                                  placeholder="Masukan Status anak">
                          </div>
@@ -208,14 +233,14 @@
                  <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Nama Ibu Kandung:</label>
+                             <label>Nama Ibu Kandung:<span class="text-danger">*</span></label>
                              <input type="text" name="nama_ibu" class="form-control"
                                  placeholder="Masukan Nama Ibu Kandung">
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Nama Ayah Kandung:</label>
+                             <label>Nama Ayah Kandung:<span class="text-danger">*</span></label>
                              <input type="text" name="nama_ayah" class="form-control"
                                  placeholder="Masukan Nama Ayah Kandung">
                          </div>
@@ -225,7 +250,7 @@
                  <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>No Telp Orang Tua:</label>
+                             <label>No Telp Orang Tua:<span class="text-danger">*</span></label>
                              <input type="text" name="no_telp" class="form-control" placeholder="Masukan No Telp">
                          </div>
                      </div>
@@ -242,13 +267,13 @@
                  <div class="row">
                      <div class="col-sm-10">
                          <div class="form-group">
-                             <label>Alamat:</label>
+                             <label>Alamat:<span class="text-danger">*</span></label>
                              <textarea class="form-control" name="alamat" rows="2" id="alamat"></textarea>
                          </div>
                      </div>
                      <div class="col-sm-2">
                          <div class="form-group">
-                             <label>Kode Pos:</label>
+                             <label>Kode Pos:<span class="text-danger">*</span></label>
                              <input type="text" name="kode_pos" class="form-control" placeholder="Kode Pos">
                          </div>
                      </div>
@@ -258,7 +283,7 @@
                  <div class="row">
                      <div class="col-sm-4">
                          <div class="form-group">
-                             <label>Provinsi:</label>
+                             <label>Provinsi:<span class="text-danger">*</span></label>
                              <select class="form-control" name="provinsi" id="provinsi">
                                  <?php
                                     include "koneksi.php";
@@ -277,7 +302,7 @@
                      </div>
                      <div class="col-sm-4">
                          <div class="form-group">
-                             <label>Kabupaten:</label>
+                             <label>Kabupaten:<span class="text-danger">*</span></label>
                              <select class="form-control" name="kabupaten" id="kabupaten">
                                  <!-- Kabupaten akan diload menggunakan ajax, dan ditampilkan disini -->
                              </select>
@@ -285,7 +310,7 @@
                      </div>
                      <div class="col-sm-4">
                          <div class="form-group">
-                             <label>Kecamatan:</label>
+                             <label>Kecamatan:<span class="text-danger">*</span></label>
                              <select class="form-control" name="kecamatan" id="kecamatan">
                                  <!-- Kecamatan akan diload menggunakan ajax, dan ditampilkan disini -->
                              </select>
@@ -327,12 +352,12 @@
                  });
                  </script>
                  <div class="alert alert-primary">
-                     <strong>Kelas Pendafataran</strong>
+                     <strong>Kelas Pendafataran<span class="text-danger">*</span></strong>
                  </div>
                  <div class="row">
                      <div class="col-sm-12">
                          <div class="form-group">
-                             <label>Kelas:</label>
+                             <label>Kelas:<span class="text-danger">*</span></label>
                              <select class="form-control" name="kelas">
                                  <option>Pilih</option>
                                  <option value="A">Kelas - A</option>
@@ -349,25 +374,25 @@
                  <div class="row">
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Username:</label>
+                             <label>Username:<span class="text-danger">*</span></label>
                              <input type="text" name="username" class="form-control" placeholder="Username">
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Email:</label>
+                             <label>Email:<span class="text-danger">*</span></label>
                              <input type="email" name="email" class="form-control" placeholder="email">
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Password:</label>
+                             <label>Password:<span class="text-danger">*</span></label>
                              <input type="password" name="password" class="form-control" placeholder="password">
                          </div>
                      </div>
                      <div class="col-sm-6">
                          <div class="form-group">
-                             <label>Ulangi Password:</label>
+                             <label>Ulangi Password:<span class="text-danger">*</span></label>
                              <input type="password" name="password2" class="form-control" placeholder="Ulangi password">
                          </div>
                      </div>

@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1>Selamat Datang di Dashboard Siswa TK EKKLESIA</h1>
+                <h1>Selamat Datang <?php echo $_SESSION['username'] ?> di Dashboard Siswa TK EKKLESIA</h1>
                 <img src="../assets/images/kids.jpg" alt="" class="mt-5">
             </div>
         </div>

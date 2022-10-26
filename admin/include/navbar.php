@@ -14,7 +14,7 @@
                                 <ul class="submenu">
                                     <li><a href="siswa.php">Data Siswa</a></li>
                                     <li><a href="data-guru.php">Data Guru</a></li>
-                                    <li><a href="">Data Alumni</a></li>
+                                    <li><a href="data_alumni.php">Data Alumni</a></li>
                                     <li><a href="jadwal_mapel.php">Jadwal Mapel</a></li>
                                     <li><a href="studi_tour.php">Jadwal Studi Tour</a></li>
                                     <li><a href="akun-guru.php">Akun Guru</a></li>

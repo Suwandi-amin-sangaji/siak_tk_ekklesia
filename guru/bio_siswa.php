@@ -30,11 +30,12 @@
                         <tr>
                             <td><?php echo $no++ ?></td>
                             <td><?php echo $d['no_induk']; ?></td>
-                            <td><?php echo $d['nama_lengkap']; ?></td>
-                            <td><?php echo $d['jenkel']; ?></td>
-                            <td><?php echo $d['kelompok']; ?></td>
+                            <td><?php echo $d['nama']; ?></td>
+                            <td><?php echo $d['jk']; ?></td>
+                            <td><?php echo $d['kelas']; ?></td>
                             <td>
-                                <a class="btn btn-success" href="detail_siswa.php?id=<?php echo $d['id']; ?>">DETAIL</a>
+                                <a class="btn btn-success"
+                                    href="detail_siswa.php?id=<?php echo $d['id_siswa']; ?>">DETAIL</a>
                             </td>
                         </tr>
                         <?php

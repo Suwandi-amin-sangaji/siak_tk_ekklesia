@@ -12,7 +12,7 @@
 
     <!-- Page Heading -->
     <center>
-        <h1 class="h3 mb-2 text-gray-800" style="text-align: center;">Data Pembayaran Siswa TK Pelita Harapan</h1>
+        <h1 class="h3 mb-2 text-gray-800" style="text-align: center;">Data Pembayaran Siswa TK EKKLESIA</h1>
         <hr>
     </center>
 
@@ -36,15 +36,15 @@
             $nomor = 1;
             while ($d = mysqli_fetch_array($data)) {
             ?>
-                <tr>
-                    <td><?php echo $nomor++; ?></td>
-                    <td><?php echo $d['nasabah']; ?></td>
-                    <td><?php echo $d['tgl_pembayaran']; ?></td>
-                    <td><?php echo $d['nama_siswa']; ?></td>
-                    <td><?php echo $d['kelompok']; ?></td>
-                    <td><?php echo $d['status']; ?></td>
-                    <!-- <td><?php echo "<img src='../siswa/bukti/$d[bukti]' width='70' height='90' />"; ?></td> -->
-                </tr>
+            <tr>
+                <td><?php echo $nomor++; ?></td>
+                <td><?php echo $d['nasabah']; ?></td>
+                <td><?php echo $d['tgl_pembayaran']; ?></td>
+                <td><?php echo $d['nama_siswa']; ?></td>
+                <td><?php echo $d['kelompok']; ?></td>
+                <td><?php echo $d['status']; ?></td>
+                <!-- <td><?php echo "<img src='../siswa/bukti/$d[bukti]' width='70' height='90' />"; ?></td> -->
+            </tr>
             <?php
             }
             ?>

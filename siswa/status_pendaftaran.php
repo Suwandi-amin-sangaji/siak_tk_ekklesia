@@ -12,7 +12,8 @@
         <div class="col-sm-8 offset-sm-2">
             <section>
                 <div class="container">
-                    <input type="text" id="live_search" class="form-control" autocomplete="off" placeholder="Input No Nik Pendaftaran ...">
+                    <input type="text" id="live_search" class="form-control" autocomplete="off"
+                        placeholder="Input Nama Siswa">
                 </div>
                 <div id="searchresult">
                 </div>
@@ -24,27 +25,27 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function() {
-        $("#live_search").keyup(function() {
-            var input = $(this).val();
-            // alert(input);
-            if (input != "") {
-                $.ajax({
-                    url: "get_status_pendaftaran.php",
-                    method: "POST",
-                    data: {
-                        input: input
-                    },
+$(document).ready(function() {
+    $("#live_search").keyup(function() {
+        var input = $(this).val();
+        // alert(input);
+        if (input != "") {
+            $.ajax({
+                url: "get_status_pendaftaran.php",
+                method: "POST",
+                data: {
+                    input: input
+                },
 
-                    success: function(data) {
-                        $("#searchresult").html(data);
-                        $("#searchresult").css("display", "block");
-                    }
-                })
-            } else {
-                $("#searchresult").css("display", "none");
-            }
-        })
+                success: function(data) {
+                    $("#searchresult").html(data);
+                    $("#searchresult").css("display", "block");
+                }
+            })
+        } else {
+            $("#searchresult").css("display", "none");
+        }
     })
+})
 </script>
 <?php include 'include/footer.php'; ?>

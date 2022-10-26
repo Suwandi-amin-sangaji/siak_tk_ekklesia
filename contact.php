@@ -33,13 +33,7 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- responsive style -->
     <link href="assets/css/responsive.css" rel="stylesheet" />
-
-
-
-
     <link rel="stylesheet" href="assets/css/css-circular-prog-bar.css">
-
-
 </head>
 
 <body>
@@ -48,34 +42,48 @@
     </div>
     <!-- end header section -->
 
+    <section class="contact_section layout_padding">
+        <div class="container">
 
-    <!-- teacher section -->
-    <div class="container">
-        <h2 class="main-heading ">
-            foto Kegiatan
-        </h2>
-        <p class="text-center">
-            TK EKKLESIA
-        </p>
-        <div class="row">
-            <?php
-            include "koneksi.php";
-            $query = "SELECT * FROM tb_kegiatan";
-            $get_data = mysqli_query($koneksi, $query);
+            <h2 class="main-heading">
+                Contact Now
 
-            while ($row = mysqli_fetch_assoc($get_data)) { ?>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="card-img-top" src="admin/fotokegiatan/<?php echo $row['foto']; ?> " width="50px"
-                            alt="Card image cap">
-                        <p class="mt-3"><?php echo $row['deskripsi'] ?></p>
+            </h2>
+            <p class="text-center">
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+
+            </p>
+            <div class="">
+                <div class="contact_section-container">
+                    <div class="row">
+                        <div class="col-md-6 mx-auto">
+                            <div class="contact-form">
+                                <form action="">
+                                    <div>
+                                        <input type="text" placeholder="Name">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="Phone Number">
+                                    </div>
+                                    <div>
+                                        <input type="email" placeholder="Email">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="Message" class="input_message">
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button type="submit" class="btn_on-hover">
+                                            Send
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
-            <?php } ?>
-        </div>
-    </div>
 
-    <?php include "inc/footer.php" ?>
+        </div>
+    </section>
+
+    <?php include "inc/footer.php"; ?>

@@ -5,10 +5,9 @@
         <div class="hero_detail-box">
             <h3>
                 Welcome to <br>
-                Best educations
             </h3>
             <h1>
-                school
+                TK EKKLESIA
             </h1>
             <p>
                 There are many variations of passages of Lorem Ipsum available, but the majority have suffered
@@ -16,7 +15,7 @@
                 some form, by injected humour, or randomised
             </p>
             <div class="hero_btn-continer">
-                <a href="" class="call_to-btn btn_white-border">
+                <a href="contact.php" class="call_to-btn btn_white-border">
                     <span>
                         Contact
                     </span>
@@ -26,7 +25,8 @@
         </div>
         <div class="hero_img-container">
             <div>
-                <img src="assets/images/hero.png" alt="" class="img-fluid">
+                <img src="assets/images/hero.png" alt="" class="img-fluid" data-aos="fade-left"
+                    data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
             </div>
         </div>
     </div>
@@ -35,74 +35,76 @@
 <!-- end header section -->
 
 <!-- about section -->
+<section class="about_section layout_padding" id="profile">
+    <div class="container">
+        <h2 class="main-heading ">
+            Profile
+        </h2>
+        <p class="text-center mb-5">
+            Tk Ekklesia
+        </p>
+        <div class="row">
+            <div class="col-sm-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="admin/profiltk/download.png" alt="" class="img-fluid w-100">
+
+            </div>
+            <div class="col-sm-7">
+                <h5 class="card-title">Sejarah</h5>
+                <p class="card-text" align="justify">
+                    Taman Kanak-kanak Ekklesia merupakan sekolah taman kanak-kanak usia dini.Pada tahun 2015 sebuah Tk
+                    yang bernama Tk Papua Kasih dari Yayasan Amal Kasih di Km.7 Kota Sorong ditutup dan dipindahkan ke
+                    Flores Nusa Tenggara Timur,sehingga semua bahan belajar mengajar dari Tk tersebut diserahkan oleh
+                    pihak Yayasan kepada Saudari Yuliana Wambrauw,S.Pd yang saat ini menjabat sebagai kepala TK tersebut
+                    dengan harapan dapat bermanfaat baginya dikemudian hari.Pada tahun ajaran baru,yakni pada bulan
+                    Juni-Juli 2015 ada warga dari Remu, Hbm, Rufei yang mencari Tk Papua Kasih untuk menyekolahkan
+                    anak-anak mereka,namun karena telah ditutup dan mereka mengetahui bahwa semua bahan belajar mengajar
+                    telah diberikan kepada Miss.Yuli,maka mereka meminta agar Miss.Yuli bisa membuka Tk untuk mendidik
+                    anak-anak mereka,walaupun tanpa Yayasan terdahulu. Maka dengan itu dari pihak Gereja Persekutuan
+                    Alkitab Indonesia(GPKAI) Ekklesia Klawasi,akhirnya menyetujui dan memberikan ruang konsistori
+                    sebagai ruang kelas dan memberikan nama menjadi Tk Ekklesia setelah itu gereja meminta rekomendasi
+                    dari pihak yayasan pendidikan dan persekolahan gereja-gereja injili ditanah papua (YPPGI) untuk
+                    mendukung berdirinya Tk Yppgi Ekklesia Klawasi yang beralamat dijalan Rufei Star,RT03/RW02,Kelurahan
+                    Klawasi Distrik Sorong Papua Barat.Kemudian Pemerintah Kora Sorong Dinas Pendidikan kota dapat
+                    memberikan Surat Ijin Operasional Nomor :02/TK-EK/VIII?2016,tanggakl 16 agustus 2016 dengan demikian
+                    TK.Yppgi Ekklesia boleh ada dan aktivitas belajar mengajar terus berjalan hingga saat ini.
+                </p>
+            </div>
+        </div>
+</section>
+
+<!-- about section -->
 <section class="about_section layout_padding">
     <div class="container">
         <h2 class="main-heading ">
-            Tentang Tk Ekklesia
+            Visi Dan Misi
         </h2>
-        <p class="text-center">
-            There are many variations of passages of Lorem Ipsum available, but the majority hThere are many
-            variations of
-            passages of Lorem Ipsum available, but the majority h
+        <p class="text-center mb-5">
+            Tk Ekklesia
         </p>
-        <div class="about_img-box ">
-            <img src="assets/images/kids.jpg" alt="" class="img-fluid w-100">
-        </div>
-        <div class="d-flex justify-content-center mt-5">
-            <a href="" class="call_to-btn  ">
+        <div class="row">
+            <div class="col-sm-7">
+                <h5 class="card-title">Visi</h5>
+                <p class="card-text" align="justify">
+                    TK Ekklesia ikut serta untuk mencerdaskan anak yang aktif,kreaktif dan inovatif serta hidup takut
+                    akan Tuhan Yesus
+                </p>
+                <h5 class="card-title">Misi</h5>
+                <p class="card-text" align="justify">
+                    1.Melaksanakan pembelajaran yang membuat anak aktif,kreatif,dan inovatif. <br>
+                    2.Membentuk anak untuk menjadi saksi Kristus di tengah-tengah keluarga,lingkungan,dan masyarakat.
+                    <br>
+                    3.Menyiapkan potensi anak yang cerdas untuk siap lanjut ke Sekolah Dasar. <br>
 
-                <span>
-                    Read More
-                </span>
-                <img src="assets/images/right-arrow.png" alt="">
-            </a>
-        </div>
-    </div>
-</section>
-
-
-<!-- about section -->
-
-
-<!-- vehicle section -->
-<section class="vehicle_section layout_padding mb-5">
-    <div class="container">
-        <h2 class="main-heading ">
-            Fasilitas Tk Ekklesia
-        </h2>
-        <div class="layout_padding-top">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <div class="vehicle_img-box ">
-                            <img src="assets/images/bus.png" alt="" class="img-fluid w-100">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="vehicle_img-box ">
-                            <img src="assets/images/bus.png" alt="" class="img-fluid w-100">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="vehicle_img-box ">
-                            <img src="assets/images/bus.png" alt="" class="img-fluid w-100">
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                </p>
             </div>
-        </div>
+            <div class="col-sm-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <img src="admin/profiltk/download.png" alt="" class="img-fluid w-100">
 
-    </div>
+            </div>
+
+        </div>
 </section>
+
 
 <!-- teacher section -->
 <section class="teacher_section layout_padding mt-5">
@@ -112,19 +114,21 @@
         </h2>
         <div class="teacher_container layout_padding2">
 
-            <div class="card-deck">
+            <div class="row">
                 <?php
                 include "koneksi.php";
-                $query = "SELECT * FROM tb_pegawai";
+                $query = "SELECT * FROM tb_guru";
                 $data = mysqli_query($koneksi, $query);
                 while ($row = mysqli_fetch_assoc($data)) {
                 ?>
+                <div class="col-sm-4">
                     <div class="card">
                         <img class="card-img-top" src="admin/fotoguru/<?php echo $row['foto'] ?>" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title"><?php echo $row['nama_guru'] ?></h5>
                         </div>
                     </div>
+                </div>
                 <?php } ?>
             </div>
 
@@ -132,53 +136,7 @@
     </div>
 </section>
 
-<!-- teacher section -->
-<!-- client section -->
-<section class="client_section layout_padding">
-    <div class="container">
-        <h2 class="main-heading ">
-            Our Students Feedback
-        </h2>
-        <p class="text-center">
-            There are many variations of passages of Lorem Ipsum available, but the majority hThere are many
-            variations of
-            passages of Lorem Ipsum available, but the majority h
-        </p>
-        <div class="layout_padding2">
-            <div class="client_container d-flex flex-column">
-                <div class="client_detail d-flex align-items-center">
-                    <div class="client_img-box ">
-                        <img src="assets/images/student.png" alt="">
-                    </div>
-                    <div class="client_detail-box">
-                        <h4>
-                            Veniam Quis
-                        </h4>
-                        <span>
-                            (exercitation)
-                        </span>
-                    </div>
-                </div>
-                <div class="client_text mt-4">
-                    <p>
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                        ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut aliquip ex
-                        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                        dolore eu
-                        fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                        deserunt mollit
-                        anim id est laborum."
 
-
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 
