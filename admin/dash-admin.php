@@ -47,8 +47,15 @@
                         <div class="card">
                             <div class="seo-fact sbg1">
                                 <div class="p-4 d-flex justify-content-between align-items-center">
+                                    <?php
+                                    // mengambil data guru
+                                    $data_aktif = mysqli_query($koneksi, "SELECT * FROM tb_siswa WHERE id_status = '1' ORDER BY id_siswa ASC");
+
+                                    // menghitung data guru
+                                    $total_aktif = mysqli_num_rows($data_aktif);
+                                    ?>
                                     <div class="seofct-icon"><i class="ti-user"></i>Siswa Aktif</div>
-                                    <h2>2,315</h2>
+                                    <h2><?php echo $total_aktif ?></h2>
                                 </div>
                                 <canvas id="seolinechart1" height="50"></canvas>
                             </div>
@@ -58,8 +65,15 @@
                         <div class="card">
                             <div class="seo-fact sbg2">
                                 <div class="p-4 d-flex justify-content-between align-items-center">
+                                    <?php
+                                    // mengambil data guru
+                                    $data_lulus = mysqli_query($koneksi, "SELECT * FROM tb_siswa WHERE id_status = '3' ORDER BY id_siswa ASC");
+
+                                    // menghitung data guru
+                                    $total_lulus = mysqli_num_rows($data_lulus);
+                                    ?>
                                     <div class="seofct-icon"><i class="ti-user"></i>Siswa Lulus</div>
-                                    <h2>3,984</h2>
+                                    <h2><?php echo $total_lulus ?></h2>
                                 </div>
                                 <canvas id="seolinechart2" height="50"></canvas>
                             </div>

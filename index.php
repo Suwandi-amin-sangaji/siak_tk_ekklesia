@@ -25,8 +25,7 @@
         </div>
         <div class="hero_img-container">
             <div>
-                <img src="assets/images/hero.png" alt="" class="img-fluid" data-aos="fade-left"
-                    data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <img src="assets/images/hero.png" alt="" class="img-fluid" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
             </div>
         </div>
     </div>
@@ -45,7 +44,7 @@
         </p>
         <div class="row">
             <div class="col-sm-5" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <img src="admin/profiltk/download.png" alt="" class="img-fluid w-100">
+                <img src="admin/profiltk/tk.png" alt="" class="img-fluid w-100">
 
             </div>
             <div class="col-sm-7">
@@ -98,7 +97,7 @@
                 </p>
             </div>
             <div class="col-sm-5" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <img src="admin/profiltk/download.png" alt="" class="img-fluid w-100">
+                <img src="admin/profiltk/tk.png" alt="" class="img-fluid w-90">
 
             </div>
 
@@ -121,14 +120,14 @@
                 $data = mysqli_query($koneksi, $query);
                 while ($row = mysqli_fetch_assoc($data)) {
                 ?>
-                <div class="col-sm-4">
-                    <div class="card">
-                        <img class="card-img-top" src="admin/fotoguru/<?php echo $row['foto'] ?>" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $row['nama_guru'] ?></h5>
+                    <div class="col-sm-4">
+                        <div class="card">
+                            <img class="card-img-top" src="admin/fotoguru/<?php echo $row['foto'] ?>" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo $row['nama_guru'] ?></h5>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <?php } ?>
             </div>
 
@@ -165,17 +164,18 @@
                                 <div>
                                     <input type="text" name="nama" placeholder="Name">
                                 </div>
-                                <div>
-                                    <input type="text" name="no_hp" placeholder="Phone Number">
-                                </div>
+
                                 <div>
                                     <input type="email" name="email" placeholder="Email">
+                                </div>
+                                <div>
+                                    <input type="text" name="no_hp" placeholder="Phone Number">
                                 </div>
                                 <div>
                                     <input type="text" placeholder="Message" name="pesan" class="input_message">
                                 </div>
                                 <div class="d-flex justify-content-center">
-                                    <button type="submit" class="btn_on-hover">
+                                    <button type="submit" name="submit" class="btn_on-hover">
                                         Send
                                     </button>
                                 </div>

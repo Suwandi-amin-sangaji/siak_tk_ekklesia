@@ -54,12 +54,15 @@
                         </div>
                         <?php } ?>
                         <?php } ?>
-                        <div class="data-tables text-right">
-                            <button type="button" class="btn btn-primary mb-3 pl-5 pr-5" data-toggle="modal"
-                                data-target=".bd-example-modal-lg"><i class="fa fa-plus "> Tambah</i>
-                            </button>
-                            <a href="cetak-siswa.php" target="_blank" class="btn btn-success mb-3 pl-5 pr-5"><i
-                                    class="fa fa-file-excel-o"> Cetak</i></a>
+                        <div class="data-tables">
+                            <div class="text-right">
+                                <button type="button" class="btn btn-primary mb-3 pl-5 pr-5" data-toggle="modal"
+                                    data-target=".bd-example-modal-lg"><i class="fa fa-plus "> Tambah</i>
+                                </button>
+                                <a href="cetak-siswa.php" target="_blank" class="btn btn-success mb-3 pl-5 pr-5"><i
+                                        class="fa fa-file-excel-o"> Cetak</i></a>
+                            </div>
+
                             <table id="dataTable" class="table-bordered">
                                 <thead class="bg-light text-capitalize">
                                     <tr>
@@ -76,7 +79,7 @@
                                     <?php
                                     include 'koneksi.php';
                                     $no = 1;
-                                    $data = mysqli_query($koneksi, "SELECT * from tb_siswa");
+                                    $data = mysqli_query($koneksi, "SELECT * from tb_siswa WHERE id_status = '1' OR id_status= '2' ORDER BY id_siswa ASC ");
                                     while ($d = mysqli_fetch_array($data)) {
                                     ?>
                                     <tr>
@@ -255,12 +258,12 @@
                                 <input type="text" name="no_telp" class="form-control" placeholder="Masukan No Telp">
                             </div>
                         </div>
-                        <!-- <div class="col-sm-6">
-                         <div class="form-group">
-                             <label>foto:</label>
-                             <input type="file" name="foto" class="form-control">
-                         </div>
-                     </div> -->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>foto:</label>
+                                <input type="file" name="foto" class="form-control">
+                            </div>
+                        </div>
                     </div>
                     <div class="alert alert-primary">
                         <strong>Data Alamat Asal</strong>
@@ -304,54 +307,22 @@
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label>Kabupaten:</label>
-                                <select class="form-control" name="kabupaten" id="kabupaten">
-                                    <!-- Kabupaten akan diload menggunakan ajax, dan ditampilkan disini -->
-                                </select>
+                                <input class="form-control" name="kabupaten" id="kabupaten">
+                                <!-- Kabupaten akan diload menggunakan ajax, dan ditampilkan disini -->
+                                </input>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label>Kecamatan:</label>
-                                <select class="form-control" name="kecamatan" id="kecamatan">
-                                    <!-- Kecamatan akan diload menggunakan ajax, dan ditampilkan disini -->
-                                </select>
+                                <input class="form-control" name="kecamatan" id="kecamatan">
+                                <!-- Kecamatan akan diload menggunakan ajax, dan ditampilkan disini -->
+                                </input>
                             </div>
                         </div>
 
                     </div>
-                    <script>
-                    $("#provinsi").change(function() {
-                        // variabel dari nilai combo provinsi
-                        var id_provinsi = $("#provinsi").val();
 
-                        // Menggunakan ajax untuk mengirim dan dan menerima data dari server
-                        $.ajax({
-                            type: "POST",
-                            dataType: "html",
-                            url: "ambil-data.php",
-                            data: "provinsi=" + id_provinsi,
-                            success: function(data) {
-                                $("#kabupaten").html(data);
-                            }
-                        });
-                    });
-
-                    $("#kabupaten").change(function() {
-                        // variabel dari nilai combo box kabupaten
-                        var id_kabupaten = $("#kabupaten").val();
-
-                        // Menggunakan ajax untuk mengirim dan dan menerima data dari server
-                        $.ajax({
-                            type: "POST",
-                            dataType: "html",
-                            url: "ambil-data.php",
-                            data: "kabupaten=" + id_kabupaten,
-                            success: function(data) {
-                                $("#kecamatan").html(data);
-                            }
-                        });
-                    });
-                    </script>
                     <div class="alert alert-primary">
                         <strong>Kelas Pendafataran</strong>
                     </div>
@@ -364,6 +335,13 @@
                                     <option value="A">Kelas - A</option>
                                     <option value="B">Kelas - B</option>
                                 </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <label>No induk:</label>
+                                <input type="text" class="form-control" name="no_induk"
+                                    placeholder="Masukkan Nomor Induk Siswa">
                             </div>
                         </div>
 

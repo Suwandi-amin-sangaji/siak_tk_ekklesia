@@ -16,7 +16,6 @@
                                     <li><a href="data-guru.php">Data Guru</a></li>
                                     <li><a href="data_alumni.php">Data Alumni</a></li>
                                     <li><a href="jadwal_mapel.php">Jadwal Mapel</a></li>
-                                    <li><a href="studi_tour.php">Jadwal Studi Tour</a></li>
                                     <li><a href="akun-guru.php">Akun Guru</a></li>
                                 </ul>
                             </li>
@@ -40,7 +39,7 @@
                             <li>
                                 <a href="javascript:void(0)"><i class="ti-settings"></i> <span>Setting</span></a>
                                 <ul class="submenu">
-                                    <!-- <a class="collapse-item" href="profil-tk.php">Profil</a> -->
+                                    <li><a class="collapse-item" href="info.php">Pengumuman</a></li>
                                     <li><a href="profil-tk.php">Profile TK</a></li>
                                     <li><a href="setting-admin.php">Profile</a></li>
                                 </ul>
