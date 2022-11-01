@@ -224,6 +224,26 @@
                             <input type="file" class="form-control-file" id="foto" name="foto" required />
                         </div>
                     </div>
+
+                    <!-- Akun Guru -->
+                    <div class="form-group row">
+                        <label for="username" class="col-sm-3 col-form-label">Username :</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" id="username" name="username" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-3 col-form-label">Email :</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="email" name="email" required />
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="password" class="col-sm-3 col-form-label">Password :</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="password" name="password" required />
+                        </div>
+                    </div>
                     <!-- Buttom -->
                     <div class="buttom col-sm-12 my-5">
                         <div class="kelompok mt-5 text-center my-3">

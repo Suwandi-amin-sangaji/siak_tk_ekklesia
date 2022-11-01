@@ -5,7 +5,7 @@
 <div class="col-12">
     <div class="card mt-5">
         <div class="card-body">
-            <h4 class="header-title">Detail Alumni</h4>
+            <h4 class="header-title">Detail Siswa</h4>
             <?php
             include "koneksi.php";
             $id = $_GET['id'];
@@ -123,7 +123,7 @@
                     <div class="col-md-4 mb-3">
                         <label for="validationCustomUsername">Tahun Lulus</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="validationCustomUsername"
+                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="Username"
                                 aria-describedby="inputGroupPrepend" value="<?php echo $data['tahun_lulus']; ?>"
                                 readonly>
                         </div>
@@ -137,7 +137,7 @@
                     </div>
 
                 </div>
-                <a class="btn btn-primary" type="submit" href="siswa.php">Kembali</a>
+                <a class="btn btn-primary" type="submit" href="data_alumni.php">Kembali</a>
             </form>
             <?php } ?>
         </div>

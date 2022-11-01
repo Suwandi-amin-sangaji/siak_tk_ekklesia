@@ -37,19 +37,22 @@
             <form action="update-siswa.php" method="POST" enctype="multipart/form-data">
                 <div class="form-group row">
                     <div class="col-sm-9">
-                        <input type="text" hidden class="form-control" id="id" name="id" value="<?php echo $data['id_siswa'] ?>">
+                        <input type="text" hidden class="form-control" id="id" name="id"
+                            value="<?php echo $data['id_siswa'] ?>">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="no_induk" class="col-sm-3 col-form-label">Nomor Induk :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="no_induk" name="no_induk" value="<?php echo $data['no_induk'] ?>">
+                        <input type="text" class="form-control" id="no_induk" name="no_induk"
+                            value="<?php echo $data['no_induk'] ?>">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nama" class="col-sm-3 col-form-label">Nama Lengkap :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $data['nama'] ?>" readonly>
+                        <input type="text" class="form-control" id="nama" name="nama"
+                            value="<?php echo $data['nama'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -64,13 +67,15 @@
                 <div class="form-group row">
                     <label for="tempat_lahir" class="col-sm-3 col-form-label">Tempat:</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir" value="<?php echo $data['tempat_lahir'] ?>">
+                        <input type="text" class="form-control" id="tempat_lahir" name="tempat_lahir"
+                            value="<?php echo $data['tempat_lahir'] ?>">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="tanggal_lahir" class="col-sm-3 col-form-label">Tanggal Lahir :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir" value="<?php echo $data['tanggal_lahir'] ?>">
+                        <input type="text" class="form-control" id="tanggal_lahir" name="tanggal_lahir"
+                            value="<?php echo $data['tanggal_lahir'] ?>">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -97,56 +102,62 @@
                 <div class="form-group row">
                     <label for="nama_ayah" class="col-sm-3 col-form-label">Nama Ayah :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="nama_ayah" name="nama_ayah" value="<?php echo $data['nama_ayah'] ?>" readonly>
+                        <input type="text" class="form-control" id="nama_ayah" name="nama_ayah"
+                            value="<?php echo $data['nama_ayah'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="nama_ibu" class="col-sm-3 col-form-label">Nama Ibu :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="nama_ibu" name="nama_ibu" value="<?php echo $data['nama_ibu'] ?>" readonly>
+                        <input type="text" class="form-control" id="nama_ibu" name="nama_ibu"
+                            value="<?php echo $data['nama_ibu'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="no_telp" class="col-sm-3 col-form-label">No Telfon Orang Tua:</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="no_telp" name="no_telp" value="<?php echo $data['no_telp'] ?>">
+                        <input type="text" class="form-control" id="no_telp" name="no_telp"
+                            value="<?php echo $data['no_telp'] ?>">
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="anak_ke" class="col-sm-3 col-form-label">Anak Ke :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="anak_ke" name="anak_ke" value="<?php echo $data['anak_ke'] ?>" readonly>
+                        <input type="text" class="form-control" id="anak_ke" name="anak_ke"
+                            value="<?php echo $data['anak_ke'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="jml_saudara" class="col-sm-3 col-form-label">Jumlah Saudara Kandung :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="jml_saudara" name="jml_saudara" value="<?php echo $data['jml_saudara'] ?>" readonly>
+                        <input type="text" class="form-control" id="jml_saudara" name="jml_saudara"
+                            value="<?php echo $data['jml_saudara'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="status_anak" class="col-sm-3 col-form-label">Hubungan Keluarga :</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control" id="status_anak" name="status_anak" value="<?php echo $data['status_anak'] ?>" readonly>
+                        <input type="text" class="form-control" id="status_anak" name="status_anak"
+                            value="<?php echo $data['status_anak'] ?>" readonly>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="alamat" class="col-sm-3 col-form-label">Alamat :</label>
                     <div class="col-sm-9">
-                        <textarea class="form-control" id="alamat" name="alamat"><?php echo $data['alamat'] ?></textarea>
+                        <textarea class="form-control" id="alamat"
+                            name="alamat"><?php echo $data['alamat'] ?></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="kode_pos" class="col-sm-3 col-form-label">Kode Pos :</label>
                     <div class="col-sm-9">
-                        <input class="form-control" id="kode_pos" name="kode_pos" value="<?php echo $data['kode_pos'] ?>" readonly></input>
+                        <input class="form-control" id="kode_pos" name="kode_pos"
+                            value="<?php echo $data['kode_pos'] ?>" readonly></input>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <?php include "koneksi.php";
-
-
                     ?>
                     <label for="status" class="col-sm-3 col-form-label">Status Sekolah :</label>
                     <div class="col-sm-9">
@@ -159,10 +170,19 @@
                         </select>
                     </div>
                 </div>
+
+                <div class="form-group row">
+                    <label for="tahun_lulus" class="col-sm-3 col-form-label">Tahun Lulus :</label>
+                    <div class="col-sm-9">
+                        <input class="form-control" id="tahun_lulus" name="tahun_lulus"
+                            value="<?php echo $data['tahun_lulus'] ?>"></input>
+                    </div>
+                </div>
                 <div class="form-group row">
                     <label for="foto" class="col-sm-3 col-form-label">Upload Foto :</label>
                     <div class="col-sm-9">
-                        <img src="fotosiswa/<?php echo $data['foto_siswa']; ?>" style="width: 120px;float: left;margin-bottom: 5px;">
+                        <img src="fotosiswa/<?php echo $data['foto_siswa']; ?>"
+                            style="width: 120px;float: left;margin-bottom: 5px;">
                         <input type="file" name="foto" class="form-control" />
                         <i style="float: left;font-size: 11px;color: red">Abaikan jika tidak merubah gambar produk</i>
                     </div>

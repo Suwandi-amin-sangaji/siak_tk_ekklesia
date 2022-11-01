@@ -21,6 +21,7 @@ $alamat = $_POST["alamat"];
 $kode_pos = $_POST["kode_pos"];
 $kelas = $_POST["kelas"];
 $id_status = $_POST['id_status'];
+$tahun_lulus = $_POST['tahun_lulus'];
 $foto_siswa = $_FILES['foto']['name'];
 
 //cek dulu jika merubah gambar produk jalankan coding ini
@@ -35,7 +36,7 @@ if ($foto_siswa != "") {
         move_uploaded_file($file_tmp, 'fotosiswa/' . $nama_gambar_baru); //memindah file gambar ke folder gambar
 
         // jalankan query UPDATE berdasarkan ID yang produknya kita edit
-        $query  = "UPDATE tb_siswa SET no_induk= '$no_induk', nama= '$nama', nik= '$nik', tempat_lahir= '$tempat_lahir', tanggal_lahir= '$tanggal_lahir', jk='$jk', agama= '$agama', anak_ke='$anak_ke', jml_saudara='$jml_saudara', status_anak='$status_anak', nama_ibu= '$nama_ibu', nama_ayah= '$nama_ayah',no_telp= '$no_telp', alamat= '$alamat',  id_status='$id_status', foto_siswa = '$nama_gambar_baru'";
+        $query  = "UPDATE tb_siswa SET no_induk= '$no_induk', tahun_lulus='$tahun_lulus', nama= '$nama', nik= '$nik', tempat_lahir= '$tempat_lahir', tanggal_lahir= '$tanggal_lahir', jk='$jk', agama= '$agama', anak_ke='$anak_ke', jml_saudara='$jml_saudara', status_anak='$status_anak', nama_ibu= '$nama_ibu', nama_ayah= '$nama_ayah',no_telp= '$no_telp', alamat= '$alamat',  id_status='$id_status', foto_siswa = '$nama_gambar_baru'";
         $query .= "WHERE id_siswa = '$id'";
         $result = mysqli_query($koneksi, $query);
         // periska query apakah ada error
@@ -53,7 +54,7 @@ if ($foto_siswa != "") {
     }
 } else {
     // jalankan query UPDATE berdasarkan ID yang produknya kita edit
-    $query  = "UPDATE tb_siswa SET no_induk= '$no_induk', nama= '$nama', nik= '$nik', tempat_lahir= '$tempat_lahir', tanggal_lahir= '$tanggal_lahir', jk='$jk', agama= '$agama', anak_ke='$anak_ke', jml_saudara='$jml_saudara', status_anak='$status_anak', nama_ibu= '$nama_ibu', nama_ayah= '$nama_ayah',no_telp= '$no_telp', alamat= '$alamat', id_status='$id_status'";
+    $query  = "UPDATE tb_siswa SET no_induk= '$no_induk', tahun_lulus='$tahun_lulus', nama= '$nama', nik= '$nik', tempat_lahir= '$tempat_lahir', tanggal_lahir= '$tanggal_lahir', jk='$jk', agama= '$agama', anak_ke='$anak_ke', jml_saudara='$jml_saudara', status_anak='$status_anak', nama_ibu= '$nama_ibu', nama_ayah= '$nama_ayah',no_telp= '$no_telp', alamat= '$alamat', id_status='$id_status'";
     $query .= "WHERE id_siswa = '$id'";
     $result = mysqli_query($koneksi, $query);
     // periska query apakah ada error

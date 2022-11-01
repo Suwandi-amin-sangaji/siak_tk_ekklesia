@@ -11,52 +11,53 @@
                         <h4 class="header-title">Akun Guru</h4>
                         <?php if (isset($_GET['pesan'])) {
                         ?>
-                            <?php if ($_GET['pesan'] == "berhasil") {
+                        <?php if ($_GET['pesan'] == "berhasil") {
                             ?>
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                    <strong>Berhasil!</strong>
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span class="fa fa-times"></span>
-                                    </button>
-                                </div>
-                            <?php } elseif ($_GET['pesan'] == "gagal") {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Berhasil!</strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span class="fa fa-times"></span>
+                            </button>
+                        </div>
+                        <?php } elseif ($_GET['pesan'] == "gagal") {
                             ?>
-                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                    <strong>Gagal!</strong>
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span class="fa fa-times"></span>
-                                    </button>
-                                </div>
-                            <?php } elseif ($_GET['pesan'] == "ekstensi") {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Gagal!</strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span class="fa fa-times"></span>
+                            </button>
+                        </div>
+                        <?php } elseif ($_GET['pesan'] == "ekstensi") {
                             ?>
-                                <div class="alert alert-warning" role="alert">
-                                    Ekstensi File Harus PNG Dan JPG
-                                </div>
-                            <?php } elseif ($_GET['pesan'] == "size") {
+                        <div class="alert alert-warning" role="alert">
+                            Ekstensi File Harus PNG Dan JPG
+                        </div>
+                        <?php } elseif ($_GET['pesan'] == "size") {
                             ?>
-                                <div class="alert alert-warning" role="alert">
-                                    Size File Tidak Boleh Lebih Dari 2 MB
-                                </div>
-                            <?php } elseif ($_GET['pesan'] == "hapus") {
+                        <div class="alert alert-warning" role="alert">
+                            Size File Tidak Boleh Lebih Dari 2 MB
+                        </div>
+                        <?php } elseif ($_GET['pesan'] == "hapus") {
                             ?>
-                                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                    <strong>Berhasil Menghapus</strong>
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span class="fa fa-times"></span>
-                                    </button>
-                                </div>
-                            <?php } elseif ($_GET['pesan'] == "gagalhapus") {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <strong>Berhasil Menghapus</strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span class="fa fa-times"></span>
+                            </button>
+                        </div>
+                        <?php } elseif ($_GET['pesan'] == "gagalhapus") {
                             ?>
-                                <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                                    <strong>Gagal !</strong>
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                        <span class="fa fa-times"></span>
-                                    </button>
-                                </div>
-                            <?php } ?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong>Gagal !</strong>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span class="fa fa-times"></span>
+                            </button>
+                        </div>
+                        <?php } ?>
                         <?php } ?>
                         <div class="data-tables">
-                            <button type="button" class="btn btn-primary mb-3 pl-5 pr-5" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fa fa-plus "> Tambah Akun Guru</i>
+                            <button type="button" class="btn btn-primary mb-3 pl-5 pr-5" data-toggle="modal"
+                                data-target=".bd-example-modal-lg"><i class="fa fa-plus "> Tambah Akun Guru</i>
                             </button>
                             <table id="dataTable" class="table-bordered">
                                 <thead class="bg-light text-capitalize">
@@ -74,15 +75,17 @@
                                     $nomor = 1;
                                     while ($d = mysqli_fetch_array($data)) {
                                     ?>
-                                        <tr>
-                                            <td><?php echo $nomor++; ?></td>
-                                            <td><?php echo $d['username']; ?></td>
-                                            <td><?php echo $d['email']; ?></td>
-                                            <td>
-                                                <a class="btn btn-success" href="detail-akunguru.php?id=<?php echo $d['id']; ?>">Detail</a>
-                                                <a onclick="return confirm('Yakin Hapus?')" class="btn btn-danger" href="hapus-akunguru.php?id=<?php echo $d['id']; ?>">Hapus</a>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td><?php echo $nomor++; ?></td>
+                                        <td><?php echo $d['username']; ?></td>
+                                        <td><?php echo $d['email']; ?></td>
+                                        <td>
+                                            <a class="btn btn-success"
+                                                href="detail-akunguru.php?id=<?php echo $d['id']; ?>">Detail</a>
+                                            <a onclick="return confirm('Yakin Hapus?')" class="btn btn-danger"
+                                                href="hapus-akunguru.php?id=<?php echo $d['id']; ?>">Hapus</a>
+                                        </td>
+                                    </tr>
                                     <?php
                                     }
                                     ?>
@@ -122,7 +125,6 @@
                         <label for="level">Status</label>
                         <select id="level" name="level" class="form-control">
                             <option>Guru</option>
-                            <option>Siswa</option>
                         </select>
                     </div>
             </div>

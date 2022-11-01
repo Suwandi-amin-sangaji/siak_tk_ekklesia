@@ -17,6 +17,12 @@ $jabatan = $_POST['jabatan'];
 $telp = $_POST['telp'];
 $no_sertifikasi = $_POST['no_sertifikasi'];
 
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = md5($_POST['password']);
+$level = 'Guru';
+
+
 //upload gambar
 $foto = upload();
 if (!$foto) {
@@ -26,7 +32,9 @@ if (!$foto) {
 
 
 // menginput data ke database
-mysqli_query($koneksi, "INSERT INTO `tb_guru`(`nip`, `nama_guru`, `gr_kelompok`, `ttl`, `jenkel`, `pend_terakhir`, `agama`, `th_ijazah_terakhir`, `alamat`, `status`, `jabatan`, `telp`, `no_sertifikasi`, `foto`) VALUES ('$nip','$nama_guru','$gr_kelompok','$ttl','$jenkel','$pend_terakhir','$agama','$th_ijazah_terakhir','$alamat','$status','$jabatan','$telp','$no_sertifikasi','$foto')");
+$sql1 = mysqli_query($koneksi, "INSERT INTO `tb_guru`(`nip`, `nama_guru`, `gr_kelompok`, `ttl`, `jenkel`, `pend_terakhir`, `agama`, `th_ijazah_terakhir`, `alamat`, `status`, `jabatan`, `telp`, `no_sertifikasi`, `foto`) VALUES ('$nip','$nama_guru','$gr_kelompok','$ttl','$jenkel','$pend_terakhir','$agama','$th_ijazah_terakhir','$alamat','$status','$jabatan','$telp','$no_sertifikasi','$foto')");
+$sql2 = mysqli_query($koneksi, "INSERT INTO `tb_user`(`username`,`email`,`password`,`level`) VALUES ('$username','$email','$password','$level')");
+
 
 
 function upload()
